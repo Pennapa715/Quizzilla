@@ -1,0 +1,156 @@
+/* import google font */
+/* Prompt */
+@import url(https://fonts.googleapis.com/css2?family=Prompt:wght@400;700&display=swap);
+/* Kanit */
+@import url(https://fonts.googleapis.com/css2?family=Kanit:wght@400;700&display=swap);
+/* Noto Sans Thai */
+@import url(https://fonts.googleapis.com/css2?family=Noto+Sans+Thai:wght@400;700&display=swap);
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: var(--font-eng);
+}
+
+:root {
+    /* colors */
+    --white-color: #ffffff;
+    --black-color: #000000;
+    --grayYellow-color: #a19b88;
+    --blueGreen-color: #60928b;
+    --yellow-color: #fcde80;
+    --lightYellow-color: #fdf3c3;
+    --orange-color: #fba935;
+
+    /* font family */
+    --font-thai: 'Prompt', sans-serif;
+    --font-eng: cursive;
+    /* font size */
+    --font-size-s: 0.9rem;
+    --font-size-n: 1rem;
+    --font-size-m: 1.12rem;
+    --font-size-l: 1.5rem;
+    --font-size-xl: 2rem;
+    --font-size-xxl: 2.3rem;
+
+    /* font weight */
+    --font-weight-normal: 400;
+    --font-weight-medium: 500;
+    --font-weight-semibold: 600;
+    --font-weight-bold: 700;
+
+    /* border radius */
+    --border-radius-s: 8px;
+    --border-radius-m: 30px;
+    --border-radius-circle: 50%;
+
+    /* site max width */
+    --site-max-width: 1300px;
+}
+
+/* Styling for whole site */
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+button {
+    cursor: pointer;
+    border: none;
+    background: none;
+}
+
+/* Navbar styling */
+header {
+    position: fixed;
+    width: 100%;
+    z-index: 5;
+    background: var(--orange-color);
+}
+
+header .navbar {
+    display: flex;
+    padding: 20px;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+.navbar .nav-logo .logo-text {
+    color: var(--white-color);
+}
+
+.navbar .nav-menu {
+    display: flex;
+    gap: 10px;
+}
+
+.navbar .nav-menu .nav-link {
+    padding: 10px 18px;
+    color: var(--white-color);
+    border-radius: var(--border-radius-m);
+    transition: 0.3s ease;
+}
+
+.navbar .nav-menu .nav-link:hover {
+    color: var(--black-color);
+    background: var(--lightYellow-color);
+}
+
+/* hero styling */
+.hero-section {
+    background: var(--lightYellow-color);
+    min-height: 100vh;
+}
+
+.hero-section .section-content {
+    display: flex;
+    align-items: center;
+    min-height: 100vh;
+    justify-content: center;
+    padding: 0 30px;
+}
+
+.hero-section .hero-details {
+    text-align: center;
+}
+
+.hero-section .hero-details .title {
+    font-size: var(--font-size-xxl);
+    font-family: var(--font-eng);
+    text-shadow: 2px 2px 5px var(--grayYellow-color);
+    /* font-weight: var(--font-weight-bold); */
+}
+
+.hero-section .hero-details .subtitle {
+    font-size: var(--font-size-m);
+    color: var(--black-color);
+    text-shadow: 2px 2px 5px var(--grayYellow-color);
+    margin: 24px 50px 40px; /* top left-right bottom */
+}
+
+.hero-section .hero-details .button {
+    padding: 10px 50px;
+    border: 2px solid black; /* ความหนาขอบ ลักษณะเส้น สีขอบ(white) */
+    color: var(--white-color);
+    border-radius: var(--border-radius-m);
+    background: var(--blueGreen-color);
+    /* box-shadow: 2px 2px 5px black; */
+    transition: 0.3s ease;
+}
+
+.hero-section .hero-details .button:hover {
+    color: var(--black-color);
+    background: transparent;
+}
+
+img {
+    width: 100%;
+}
+
+.hero-section .hero-image-wrapper {
+}
