@@ -18,6 +18,7 @@
     --white-color: #ffffff;
     --black-color: #000000;
     --grayYellow-color: #a19b88;
+    --darkBlueGreen-color: #376962;
     --blueGreen-color: #60928b;
     --lightYellow-color: #fdf3c3;
     --orange-color: #fba935;
@@ -149,8 +150,7 @@ header .navbar {
 }
 
 .hero-section .hero-details .button:hover {
-    color: var(--black-color);
-    background: transparent;
+    background: var(--darkBlueGreen-color);
 }
 
 img {
